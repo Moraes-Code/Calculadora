@@ -1,20 +1,21 @@
-let visor = document.getElementById("visor");
+ let visor = document.getElementById("visor");
 
-function addNumero(num){
+  function addNumero(num) {
     visor.value += num;
-}
+  }
 
-function addOperador(op){
-    visor.value - op;
-}
+  function addOperador(op) {
+    visor.value += op;
+  }
 
-function calcular(){
-    try{
-        visor.value = eval (visor.value);
-    }catch{
-        visor.value = "Erro";
+  function calcular() {
+    try {
+      visor.value = eval(visor.value);
+    } catch {
+      visor.value = "Erro";
     }
-}
-function limpar() {
+  }
+
+  function limpar() {
     visor.value = "";
-}
+  }
