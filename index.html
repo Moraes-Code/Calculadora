@@ -4,36 +4,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
 <div class="Calculadora">
-    
-        <div class="Botões">
-            <button class="Botão" onclick="add('1')">1</button>
-            <button class="Botão" onclick="add('2')">2</button>
-            <button class="Botão" onclick="add('3')">3</button>
-            <button class="Botão" onclick="add('+')">+</button>
-            
-            <button class="Botão" onclick="add('4')">4</button>
-            <button class="Botão" onclick="add('5')">5</button>
-            <button class="Botão" onclick="add('6')">6</button>
-            <button class="Botão" onclick="add('-')">-</button>
-           
-            <button class="Botão" onclick="add('7')">7</button>
-            <button class="Botão" onclick="add('8')">8</button>
-            <button class="Botão" onclick="add('9')">9</button>
-            <button class="Botão" onclick="add('*')">*</button>
-            
-            <button class="Botão" onclick="add('0')">0</button>
-            <button class="Botão" onclick="calcular()">=</button>
-            <button class="Botão" onclick="limpar()">C</button>
-            <button class="Botão" onclick="add('/')">/</button>
-        </div>
 
-        <div class="Inserir">
-            <input type="text">
+        
+    
+
+        <div class="Botões">
+
+            <input type="text" id="visor" disabled>
+
+            <button   onclick="addNumero('1')">1</button>
+            <button   onclick="addNumero('2')">2</button>
+            <button   onclick="addNumero('3')">3</button>
+            <button   onclick="addOperador('+')">+</button>
+            
+            <button   onclick="addNumero('4')">4</button>
+            <button   onclick="addNumero('5')">5</button>
+            <button   onclick="addNumero('6')">6</button>
+            <button   onclick="addOperador('-')">-</button>
+           
+            <button   onclick="addNumero('7')">7</button>
+            <button   onclick="addNumero('8')">8</button>
+            <button   onclick="addNumero('9')">9</button>
+            <button   onclick="addOperador('*')">*</button>
+            
+            <button   onclick="addNumero('0')">0</button>
+            <button   onclick="calcular()">=</button>
+            <button   onclick="limpar()">C</button>
+            <button   onclick="addOperador('/')">/</button>
         </div>
 
 </div>
 </body>
+<script src="calc.js"></script>
 </html>
